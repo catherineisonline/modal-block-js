@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(https://cdn.pixabay.com/photo/2019/12/05/05/05/art-gallery-4674319_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+}
+
+.banner {
+  background-color: beige;
+  width: 50%;
+  padding: 60px;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+.banner .btn {
+  padding: 20px;
+  background-color: transparent;
+  border-color: black;
+  text-transform: uppercase;
+}
+
+.modal-overlay {
+  position: fixed;
+  background-color: rgba(222, 184, 135, 0.582);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  position: relative;
+  background-color: beige;
+  width: 60%;
+  height: 390px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal-container h3 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.808);
+  font-size: 25px;
+}
+
+.close-btn {
+  position: absolute;
+  background-color: transparent;
+  font-size: 30px;
+  color: rgba(255, 193, 123, 0.808);
+  border-color: transparent;
+  top: 0;
+  right: 0;
+}
+
+.close-btn .fa-times {
+  background-color: transparent;
+  font-size: 30px;
+  color: rgba(255, 193, 123, 0.808);
+  border-color: transparent;
+}
+
+.article {
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  font-size: 20px;
+}
