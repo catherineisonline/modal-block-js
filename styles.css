@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 html,
 body {
@@ -16,6 +15,7 @@ body {
   background-size: cover;
   background-position: center center;
   font-family: "Luxurious Roman", cursive;
+  box-sizing: border-box;
 }
 
 .hidden {
@@ -71,9 +71,6 @@ h2,
 
 .modal-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   justify-content: center;
   align-content: center;
   background-color: rgba(255, 255, 255, 0.342);
@@ -111,7 +108,9 @@ h2,
 .article {
   position: relative;
   text-align: left;
-  font-size: 1rem;
+  padding: 1rem;
+  overflow:hidden;
+
 }
 
 /** Media Queries **/
