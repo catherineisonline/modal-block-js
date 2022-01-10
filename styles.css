@@ -111,7 +111,7 @@ h2,
 }
 
 /** Media Queries **/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   /** Modal Box **/
   .banner {
     width: 70%;
