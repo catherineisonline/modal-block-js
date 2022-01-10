@@ -17,6 +17,10 @@ body {
   background-position: center center;
   font-family: "Luxurious Roman", cursive;
 }
+
+.hidden {
+  display: none;
+}
 /** Modal Box **/
 .banner {
   background-color: rgba(255, 255, 255, 0.342);
