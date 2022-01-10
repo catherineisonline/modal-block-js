@@ -121,7 +121,8 @@ h2,
   }
   /** CLose Button **/
   .fa-times {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 1.2rem;
   }
   .modal-container {
     padding: 1rem;
