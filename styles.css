@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
+:root {
+  --light-gray: rgba(255, 255, 255, 0.342);
+  --black: rgb(0, 0, 0);
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,14 +27,18 @@ body {
 }
 /** Modal Box **/
 .banner {
-  background-color: rgba(255, 255, 255, 0.342);
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-gray);
   backdrop-filter: blur(5px);
-  width: 40%;
-  height: 15rem;
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
   margin: 0 auto;
   margin-top: 15%;
-  padding: 2rem;
-  text-align: center;
+  padding: 3rem;
 }
 
 h1,
@@ -41,11 +49,12 @@ h2,
 
 /** Modal Button **/
 .modal-btn {
+  cursor: pointer;
   padding: 1rem;
   margin: 2rem;
   background-color: transparent;
-  color: black;
-  border: 1px solid black;
+  color: var(--black);
+  border: 1px solid var(--black);
   border-radius: 25px;
   box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
   -webkit-box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
@@ -54,7 +63,7 @@ h2,
 
 .modal-overlay {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: var(--light-gray);
   backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
@@ -73,7 +82,7 @@ h2,
   position: relative;
   justify-content: center;
   align-content: center;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: var(--light-gray);
   backdrop-filter: blur(5px);
   width: 60%;
   height: auto;
@@ -109,16 +118,11 @@ h2,
   position: relative;
   text-align: left;
   padding: 1rem;
-  overflow:hidden;
-
+  overflow: hidden;
 }
 
 /** Media Queries **/
 @media screen and (max-width: 992px) {
-  /** Modal Box **/
-  .banner {
-    width: 70%;
-  }
   /** CLose Button **/
   .fa-times {
     font-size: 1.5rem;
